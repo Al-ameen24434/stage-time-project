@@ -1,0 +1,17 @@
+
+
+.talent-top{
+    background-image: url(../assets/talents-image.png);
+    color: #fff;
+    text-align: center;
+}
+
+.talent-top-head{
+    padding: 100px 30px;
+    
+}
+.talent-top-head h1{
+    font-weight: 400;
+    font-size: 64px
+    
+}

@@ -1,0 +1,47 @@
+
+
+.foot-comp-1{
+    text-align: center;
+    padding: 60px 60px;
+    background-color: #f5f7fa;
+}
+.foot-comp-1 h1{
+    font-size: 48px;
+    font-weight: normal;
+    
+}
+.foot-comp-1 {
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.foot-comp-1-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+}
+.foot-comp-1-input input{
+    width: 338px;
+    height: 62px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'poppins';
+    border-color: #017297;
+}
+
+.foot-comp-1-input button{
+    width: 129px;
+    height: 65px;
+    background-color: #017297;
+    border-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'poppins';
+    cursor: pointer;
+}

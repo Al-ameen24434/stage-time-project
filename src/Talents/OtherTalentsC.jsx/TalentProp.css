@@ -1,0 +1,57 @@
+
+
+.talent-prop{
+  width: 568px;
+  background-color: #f3f3f5;
+  padding: 30px;
+    
+}
+.talent-prop h3{
+    font-size: 32px;
+    color: #017297;
+    font-weight: 400;
+}
+.talent-prop p{
+    font-size: 28px;
+   
+    
+}
+@media (max-width:1152px){
+    .talent-prop{
+        width: 358px;
+        background-color: #f3f3f5;
+        padding: 40px;
+          
+      }
+      .talent-prop h3{
+          font-size: 32px;
+          color: #017297;
+          font-weight: 400;
+      }
+      .talent-prop p{
+          font-size: 28px;
+         
+          
+      }
+}
+
+
+@media (max-width:768px){
+    .talent-prop{
+        width: 300px;
+        background-color: #f3f3f5;
+        padding: 20px;
+          
+      }
+      .talent-prop h3{
+          font-size: 24px;
+          color: #017297;
+          font-weight: 400;
+      }
+      .talent-prop p{
+          font-size: 18px;
+         
+          
+      }
+    
+}

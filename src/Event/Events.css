@@ -1,0 +1,24 @@
+
+
+.top-events{
+    background-image: url(../assets/talents-image.png);
+}
+
+.top-events h1{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-size: 64px;
+    color: #fff;
+    font-weight: 400;
+}
+@media (max-width: 768px){
+    .top-events h1{
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        font-size: 48px;
+        color: #fff;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,33 @@
+
+
+.third-home-content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 30px 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.third-home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.third-home-header{
+    text-align: center;
+}
+.third-home-header h1{
+    font-size: 48px;
+    color: #051534;
+    font-weight: normal;
+    padding-bottom: 20px;
+ }
+.third-home-header p{
+   font-size: 28px;
+   color: #051534;
+   padding-bottom: 20px;
+}

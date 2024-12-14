@@ -1,0 +1,30 @@
+
+
+.talent-details-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.talent-details-3a h1{
+    font-size: 48px;
+    font-weight: 400;
+    color: #017297;
+}
+
+.talent-details-3a p{
+    font-size: 28px;
+    
+}
+
+.talent-details-3-button button{
+    width: 193px;
+    height: 63px;
+    color: #fff;
+    background-color: #017297;
+    border: transparent;
+}

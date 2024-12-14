@@ -1,0 +1,39 @@
+
+
+.talent-first-container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.talent-details-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 80px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1152px){
+    
+.talent-first-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.talent-details-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 80px 10px;
+}
+    
+}
+
+
+@media (max-width:768px){
+    
+}

@@ -1,0 +1,42 @@
+
+
+.card-1{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items:center ;
+    background-color: #F3F3F5;
+    padding: 20px 10px;
+}
+
+.card-content img{
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 768px){
+
+    
+.card-1{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: #fff;
+    padding: 20px;
+
+}
+}
+

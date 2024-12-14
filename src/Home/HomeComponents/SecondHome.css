@@ -1,0 +1,92 @@
+/* HowItWorks.css */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.container {
+    background-color: #f9f9f9;
+    padding: 50px 40px; /* py: 5, px: 3 */
+    font-family: "poppins";
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 60px;
+   
+  }
+  
+  .header h4 {
+    margin-bottom: 16px; /* gutterBottom */
+  }
+  
+  .header p {
+    color: #000;
+    max-width: 70%;
+    margin: 20px auto 40px; 
+    padding-bottom: 60px;
+    
+  }
+  
+  .steps-list {
+    position: relative;
+    
+    
+  }
+  
+  .step-item {
+    cursor: pointer;
+    padding: 20px;
+    
+  }
+  
+  .step-button {
+    border-radius: 8px; /* borderRadius: 1 */
+    transition: background-color 0.3s;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 16px);
+    height: 100%;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.12); /* grey.300 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .vertical-line-item {
+    flex: 1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .selected {
+    background-color: black;
+  }
+  
+  .content {
+    text-align: left;
+    padding: 24px; /* p: 3 */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   margin-top: 30px;
+  }
+  
+  .content-icon {
+    margin-bottom: 16px; /* mb: 2 */
+  }
+  .vertical-line-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .vertical-line-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .vertical-line-item.selected {
+    background-color: #000;
+    transition: all 0.3s ease;
+  }
+    
+
+ 

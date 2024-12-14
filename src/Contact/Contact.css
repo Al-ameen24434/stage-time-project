@@ -1,0 +1,47 @@
+
+.contact-top{
+    background-image: url(../assets/contact-image.png);
+    text-align: center;
+    color: #fff;
+    padding-bottom: 80px;
+}
+.contact-top h1{
+    padding-top: 60px;
+    font-weight: 400;
+    font-size: 64px;
+   
+   
+    
+ 
+}
+.contact-top p{
+    font-size: 28px;
+    
+ }
+    
+.contact-top .contact-top-info button{
+    width: 193px;
+    height: 63px;
+    color: #017297;
+    cursor: pointer;
+    
+}
+.contact-top-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px){
+    .contact-top h1{
+        padding-top: 60px;
+        font-weight: 400;
+        font-size: 48px;
+       
+       
+        
+     
+    }
+}
