@@ -1,8 +1,8 @@
 
 import './FifthHome.css'
-import cardImage_1 from "../../assets/image.png"
-import cardImage_2 from "../../assets/image (1).png"
-import cardImage_3 from "../../assets/image (2).png"
+import cardImage_1 from "../../assets/Image.png"
+import cardImage_2 from "../../assets/Image (1).png"
+import cardImage_3 from "../../assets/Image (2).png"
 import Card_1 from './card-1'
 const FifthHome = () => {
     return ( 
