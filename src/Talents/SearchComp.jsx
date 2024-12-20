@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { TextField, InputAdornment, Box, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
+import { useEffect } from 'react'
+import "aos/dist/aos.css"; 
+import AOS from "aos";
 
 const SearchWithIcon = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -15,9 +18,12 @@ const SearchWithIcon = () => {
   const handleClear = () => {
     setSearchQuery('');
   };
+       useEffect(() => {
+        AOS.init({ duration: 1000, once: true }); 
+         }, []);
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px', paddingBottom: '20px' }}>
+    <Box  data-aos="fade-right" data-aos-delay="600" sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px', paddingBottom: '20px' }}>
       <TextField
         type="search"
         placeholder="Search for answers"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Grid,
@@ -16,6 +16,8 @@ import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
 import PlaylistAddCheckIcon from "@mui/icons-material/PlaylistAddCheck";
 import HowToVoteIcon from "@mui/icons-material/HowToVote";
 import "./SecondHome.css";
+import "aos/dist/aos.css"; 
+import AOS from "aos";
 
 const steps = [
   { text: "Create an Account", icon: <AccountCircleIcon sx={{ fontSize: 50 }} /> },
@@ -34,9 +36,12 @@ const styles = {
 
 const HowItWorks = () => {
   const [selectedStep, setSelectedStep] = useState(0);
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: true }); 
+    }, []);
 
   return (
-    <Box className="container" sx={styles.typography}>
+    <Box className="container" sx={styles.typography} data-aos="fade-right">
       <div className="header">
         <Typography variant="h4" sx={styles.headerTitle} gutterBottom>
           How it works
@@ -47,7 +52,7 @@ const HowItWorks = () => {
         </Typography>
       </div>
 
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center" data-aos="fade-up" data-aos-delay="100">
         <Grid item xs={12} md={4} className="steps-list">
           <List>
             {steps.map((step, index) => (

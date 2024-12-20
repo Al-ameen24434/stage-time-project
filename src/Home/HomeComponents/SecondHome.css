@@ -13,7 +13,7 @@
   }
   
   .header h4 {
-    margin-bottom: 16px; /* gutterBottom */
+    margin-bottom: 16px; 
   }
   
   .header p {
@@ -88,5 +88,15 @@
     transition: all 0.3s ease;
   }
     
+  @media (max-width: 768px){
+    .header h4 {
+      
+      font-size: 40px;
+    }
+    .header p {
+     font-size: 25px;
+      
+    }
 
+  }
  

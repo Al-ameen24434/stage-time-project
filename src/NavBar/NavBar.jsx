@@ -1,21 +1,27 @@
 import { Link } from "react-router-dom";
-import { useState } from "react"; // For managing the menu state
-import { IconButton } from "@mui/material"; // Material UI IconButton
-import MenuIcon from '@mui/icons-material/Menu'; // Hamburger icon
-import CloseIcon from '@mui/icons-material/Close'; // Close icon (X)
+import { useState } from "react"; 
+import { IconButton } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu'; 
+import CloseIcon from '@mui/icons-material/Close'; 
 import './NavBar.css';
+import { useEffect } from 'react'
+import "aos/dist/aos.css"; 
+import AOS from "aos";
 
 const NavBar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu visibility
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
-    // Toggle the mobile menu
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+     useEffect(() => {
+              AOS.init({ duration: 1000, once: true }); 
+            }, []);
 
     return ( 
-        <div className="nav-bar">
-            <div className="logo">
+        <div className="nav-bar" data-aos="fade-down" data-aos-delay="200">
+            <div className="logo" data-aos="fade-right" data-aos-delay="200">
                 <Link to='/'>
                     <h2>The <br />
                         <span className="next-gen">Next Gen </span><br />
@@ -25,7 +31,7 @@ const NavBar = () => {
             </div>
             
             {/* Navigation Links */}
-            <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+            <div className={ `nav-links ${isMenuOpen ? 'active' : ''}`} >
                 <Link to='/about'>About us</Link>
                 <Link to='/events'>Events</Link>
                 <Link to='/talents'>Talents</Link>

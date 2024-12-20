@@ -1,9 +1,15 @@
 
 import { Link } from "react-router-dom";
-import './FooterComp-2.css'
+import './FooterComp-2.css';
+import { useEffect } from 'react'
+import "aos/dist/aos.css"; 
+import AOS from "aos";
 const FooterComp_2 = () => {
+     useEffect(() => {
+                          AOS.init({ duration: 1000, once: true }); 
+                        }, []);
     return ( 
-        <div className="footer-comp-2">
+        <div className="footer-comp-2" data-aos="fade-up" data-aos-delay="500">
             <div className="main-foot-2">
                 <div className="foot-logo">
                     <Link to='/'>
