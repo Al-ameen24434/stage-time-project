@@ -9,8 +9,12 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 const Talents = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000, once: true }); 
-         }, []);
+        // Initialize AOS conditionally based on screen size using ternary operator
+        window.innerWidth <= 768 
+            ? AOS.init({ disable: true })  // Disable AOS for mobile
+            : AOS.init({ duration: 1000, once: true });  // Enable AOS for larger screens
+
+    }, []);
     return ( 
         <div className="talents">
             <div className="talent-top">

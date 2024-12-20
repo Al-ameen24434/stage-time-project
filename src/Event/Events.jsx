@@ -6,9 +6,13 @@ import AOS from "aos";
 
 
 const Events = () => {
-      useEffect(() => {
-             AOS.init({ duration: 1000, once: true }); 
-              }, []);
+    useEffect(() => {
+        // Initialize AOS conditionally based on screen size using ternary operator
+        window.innerWidth <= 768 
+            ? AOS.init({ disable: true })  // Disable AOS for mobile
+            : AOS.init({ duration: 1000, once: true });  // Enable AOS for larger screens
+
+    }, []);
     return (
         <div className="events">
             <div className="top-events">

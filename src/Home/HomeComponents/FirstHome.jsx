@@ -6,8 +6,12 @@ import "./FirstHome.css";
 
 const FirstHome = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); 
-  }, []);
+    // Initialize AOS conditionally based on screen size using ternary operator
+    window.innerWidth <= 768 
+        ? AOS.init({ disable: true })  // Disable AOS for mobile
+        : AOS.init({ duration: 1000, once: true });  // Enable AOS for larger screens
+
+}, []);
 
   return (
     <div className="first-home-content" data-aos="fade-right">
