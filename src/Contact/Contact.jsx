@@ -7,9 +7,19 @@ import AOS from "aos";
 
 
 const Contacts = () => {
-      useEffect(() => {
-         AOS.init({ duration: 1000, once: true }); 
-          }, []);
+    useEffect(() => {
+        if (window.innerWidth >= 768) {
+          AOS.init({
+            duration: 1200, // Duration of the animation
+            easing: 'ease-in-out', // Easing function
+            offset: 200, // Trigger the animation a little before it's in view
+          });
+        } else {
+          AOS.init({
+            disable: true, // Disable animations on mobile devices
+          });
+        }
+      }, []);
     return ( 
         <div className="contacts"> 
             <div className="contact-top">
