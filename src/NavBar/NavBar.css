@@ -71,7 +71,9 @@
 
    
     .nav-links.active {
-        display: none;
+        display: flex;
+        
+        
        
        
        
@@ -80,6 +82,7 @@
     .nav-links a {
         margin: 15px 0;
         font-size: 20px;
+        padding: 20px;
         transition: color 0.3s ease-in-out;
     }
 
